@@ -1,2 +1,3 @@
 # art-webpage
-a collaboration with Mr Sithole 
+See art differently.
+Art is a beautiful expression personified by strong emotions and character.
