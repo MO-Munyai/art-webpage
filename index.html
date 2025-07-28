@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="nameForm">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <input type="submit" value="Submit">
+    </form>
+    <div id="output"></div>
+    <script>
+        document.getElementById('nameForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            if (name.trim()) {
+                document.getElementById('output').innerHTML = `Hello, ${name}! Welcome to our site.`;
+            } else {
+                document.getElementById('output').innerHTML = `Please enter your name.`;
+            }
+        });
+    </script>
+</body>
+</html>
